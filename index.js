@@ -7,6 +7,9 @@ var path = require('path');
 
 var databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI;
 
+/**
+ *  "value": "$SCALINGO_MONGO_URL"
+ */
 
 if (!databaseUri) {
   console.log('DATABASE_URI not specified, falling back to localhost.');
