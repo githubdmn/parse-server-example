@@ -18,7 +18,8 @@
     },
     "DATABASE_URI": {
       "description": "Connection string for your database.",
-      "value": "$SCALINGO_MONGO_URL"
+      "value":"mongodb+srv://dmnatlas:<password>@cluster0-58txm.mongodb.net/test?retryWrites=true&w=majority"
+      //"value": "$SCALINGO_MONGO_URL"
     }
   },
   "addons": ["scalingo-mongodb"]
