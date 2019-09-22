@@ -7,12 +7,14 @@ var path = require('path');
 
 var databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI;
 
+let DatabaseUri = 'mongodb+srv://dmnatlas:<password>@cluster0-58txm.mongodb.net/test?retryWrites=true&w=majority'
+
 if (!databaseUri) {
   console.log('DATABASE_URI not specified, falling back to localhost.');
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb+srv://dmnatlas:<password>@cluster0-58txm.mongodb.net/test?retryWrites=true&w=majority',
+  databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'myAppId',
   masterKey: process.env.MASTER_KEY || '', //Add your master key here. Keep it secret!
