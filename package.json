@@ -11,7 +11,7 @@
   "dependencies": {
     "audit": "0.0.6",
     "express": "^4.17.1",
-    "kerberos": "~0.0.x",
+    "kerberos": "~1.0.x",
     "parse": "~2.10.0",
     "parse-server": "*"
   },
